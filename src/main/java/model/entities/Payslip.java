@@ -31,4 +31,14 @@ public class Payslip {
   public Employee getEmployee() {
     return employee;
   }
+
+  @Override
+  public String toString() {
+    return "Payslip{" +
+            "inss=" + inss +
+            ", irrf=" + irrf +
+            ", netSalary=" + netSalary +
+            ", employee=" + employee +
+            '}';
+  }
 }

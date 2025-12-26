@@ -2,6 +2,8 @@ package application;
 
 import model.entities.Employee;
 import service.calculations.InssCalculationService;
+import service.calculations.IrrfCalculationService;
+import service.calculations.PayslipGeneratorService;
 import service.calculations.SalaryService;
 import service.io.CsvReaderService;
 
@@ -10,13 +12,15 @@ import java.math.BigDecimal;
 public class Program {
   public static void main(String[] args) {
     CsvReaderService csvReader = new CsvReaderService();
-    SalaryService salaryService = new SalaryService();
     Employee employee;
     employee = csvReader.readCsv();
 
-    System.out.println(employee);
+    InssCalculationService inssCalculationService = new InssCalculationService();
+    IrrfCalculationService irrfCalculationService = new IrrfCalculationService();
+    SalaryService salaryService = new SalaryService();
 
-    System.out.println(salaryService.calculateMonthlyValue(employee));
+    PayslipGeneratorService payslipGeneratorService = new PayslipGeneratorService(inssCalculationService, irrfCalculationService, salaryService);
 
+    System.out.println(payslipGeneratorService.generate(employee));
   }
 }
