@@ -6,14 +6,16 @@ public class Payslip {
   private BigDecimal inss;
   private BigDecimal irrf;
   private BigDecimal netSalary;
+  private BigDecimal monthlyGrossSalary;
 
   private Employee employee;
 
-  public Payslip(BigDecimal inss, BigDecimal irrf, BigDecimal netSalary, Employee employee) {
+  public Payslip(BigDecimal inss, BigDecimal irrf, BigDecimal netSalary, Employee employee, BigDecimal monthlyGrossSalary) {
     this.inss = inss;
     this.irrf = irrf;
     this.netSalary = netSalary;
     this.employee = employee;
+    this.monthlyGrossSalary = monthlyGrossSalary;
   }
 
   public BigDecimal getInss() {

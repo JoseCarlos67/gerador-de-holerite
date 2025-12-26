@@ -19,8 +19,8 @@ public class Program {
     IrrfCalculationService irrfCalculationService = new IrrfCalculationService();
     SalaryService salaryService = new SalaryService();
 
-    PayslipGeneratorService payslipGeneratorService = new PayslipGeneratorService(inssCalculationService, irrfCalculationService, salaryService);
+    PayslipGeneratorService payslipGeneratorService = new PayslipGeneratorService(inssCalculationService, irrfCalculationService, salaryService, employee);
 
-    System.out.println(payslipGeneratorService.generate(employee));
+    System.out.println(payslipGeneratorService.generate());
   }
 }
