@@ -10,7 +10,7 @@ public class ClockRecord {
   private LocalTime lunchBreakStart;
   private LocalTime lunchBreakEnd;
 
-  public ClockRecord(LocalDate date, LocalTime clockIn, LocalTime clockOut, LocalTime lunchBreakStart, LocalTime lunchBreakEnd) {
+  public ClockRecord(LocalDate date, LocalTime clockIn, LocalTime lunchBreakStart, LocalTime lunchBreakEnd, LocalTime clockOut) {
     this.date = date;
     this.clockIn = clockIn;
     this.clockOut = clockOut;
@@ -36,5 +36,16 @@ public class ClockRecord {
 
   public LocalTime getLunchBreakEnd() {
     return lunchBreakEnd;
+  }
+
+  @Override
+  public String toString() {
+    return "ClockRecord{" +
+            "date=" + date +
+            ", clockIn=" + clockIn +
+            ", clockOut=" + clockOut +
+            ", lunchBreakStart=" + lunchBreakStart +
+            ", lunchBreakEnd=" + lunchBreakEnd +
+            '}';
   }
 }

@@ -29,6 +29,10 @@ public class Employee {
     return grossSalary;
   }
 
+  public List<ClockRecord> getClockRecordList() {
+    return clockRecordList;
+  }
+
   public void setGrossSalary(BigDecimal value) {
     grossSalary = value;
   }
