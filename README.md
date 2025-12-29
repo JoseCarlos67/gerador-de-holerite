@@ -1,11 +1,11 @@
-# 💼 Gerador de Holerites e Folha de Ponto
+# 💼 Calculadora de Salário Líquido
 
 ![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)
 ![Maven](https://img.shields.io/badge/Build-Maven-C71A36?logo=apache-maven&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-000000?logo=intellij-idea&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/Status-Finalizado-green)
 
-Um sistema de automação de Departamento Pessoal desenvolvido em **Java**. A aplicação processa registros de ponto, calcula horas trabalhadas, aplica descontos tributários (INSS e IRRF) e gera relatórios contábeis.
+Um sistema de automação de Departamento Pessoal desenvolvido em **Java**. A aplicação processa registros de ponto, calcula horas trabalhadas, aplica descontos tributários (INSS e IRRF) e gera .csv como saída.
 
 ---
 
@@ -23,7 +23,6 @@ O projeto está sendo desenvolvido para consolidar conhecimentos em **Java 17**,
 - 📥 **Importação de Ponto:** Leitura automática de arquivos `.csv` contendo registros de entrada e saída.
 - 🕒 **Cálculo de Horas:** Processamento de jornada de trabalho (em progresso).
 - 💰 **Cálculo Tributário:** Aplicação automática das tabelas progressivas de **INSS** e **IRRF** (Base 2025).
-- 📄 **Geração de Holerite:** Consolidação de vencimentos e descontos.
 - 📤 **Relatório Contábil:** Exportação dos dados processados para arquivo `.csv` formatado.
 
 ---
