@@ -28,7 +28,6 @@ public class CsvReaderService {
           employee.addClockRecord(clockRecord);
           line = bufferedReader.readLine();
       }
-      System.out.println(employee);
       return employee;
     } catch (IOException e) {
       System.out.println("Error: " + e.getMessage());
